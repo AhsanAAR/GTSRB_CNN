@@ -6,7 +6,7 @@ The traffic signs range in size from 15×15 to 222×192 pixels.
 For training, validation, and test we will divide the entire GTSRB dataset into three mutually distinct subsets. The data is partitioned into three sets of 50%, 25% , and 25%.
 
 ### Previous work
-This dataset was introduced in 2011 and since then numerous papers have been introduced for this problem. Among techniques like K-NNs [1], random forests [2] and embedding learning [3] Convolutional Neural Networks came out with the best accuracies [4].
+This dataset was introduced in 2011 and since then numerous papers have been introduced for this problem. Among techniques like K-NNs [[1]](https://github.com/AhsanAAR/GTSRB_CNN/blob/main/README.md?#L39), random forests [2] and embedding learning [3] Convolutional Neural Networks came out with the best accuracies [4].
 
 One such example is the coarse-to-fine hierarchical CNN approach used by Xuehong Mao et al.[5] in which the traffic signs are first composed into super classes and the classification is seen as a hierarchical process. These superclasses are not based on the human-defined subset provided with the dataset, but a CNN-oriented clustering algorithm is used to create K families according to its own criterion. After this, K CNNs each dedicated to one family of images is trained specifically on images from that family of signs. This way, largely similar signs are trained together and the dedicated CNNs have to only focus on the minor differences, giving a more accurate result. The final accuracy for this model was 99.67% Correct detection rate (CDR).
 
@@ -33,3 +33,19 @@ The following procedure is followed:
 ![Loss](loss.png)
 
 Maximum accuracy 93.6 %.
+
+### References
+
+[1] Timofte, Radu, and Luc Van Gool. "Iterative nearest neighbors for classification and dimensionality reduction." 2012 IEEE Conference on Computer Vision and Pattern Recognition. IEEE, 2012.
+
+[2] Zaklouta, Fatin, Bogdan Stanciulescu, and Omar Hamdoun. "Traffic sign classification using kd trees and random forests." The 2011 international joint conference on neural networks. IEEE, 2011.
+
+[3] Yagfarov, Rauf, Vladislav Ostankovich, and Aydar Akhmetzyanov. "Traffic sign classification using embedding learning approach for self-driving cars." International Conference on Human Interaction and Emerging Technologies. Springer, Cham, 2020.
+
+[4] Stallkamp, Johannes, et al. "Man vs. computer: Benchmarking machine learning algorithms for traffic sign recognition." Neural networks 32 (2012): 323-332.
+
+[5] Mao, Xuehong, et al. "Hierarchical CNN for traffic sign recognition." 2016 IEEE Intelligent Vehicles Symposium (IV). IEEE, 2016.
+
+[6] Mao, Xuehong, et al. "Hierarchical CNN for traffic sign recognition." 2016 IEEE Intelligent Vehicles Symposium (IV). IEEE, 2016.
+
+[7] Zaibi, Ameur, Anis Ladgham, and Anis Sakly. "A Lightweight Model for Traffic Sign Classification Based on Enhanced LeNet-5 Network." Journal of Sensors 2021 (2021).
