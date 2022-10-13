@@ -28,6 +28,7 @@ The following procedure is followed:
 ![Model architecture](model_2.png)
 
 4. Used batch size 16, learning rate 0.0001, results for 20 epochs shown.
+
 ![Accuracy](accuracy.png)
 ![Loss](loss.png)
 
